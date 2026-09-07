@@ -205,6 +205,84 @@
     max-width: 68ch;
   }
 
+  /* ---------- EDUCATION ---------- */
+  .degree{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+    align-items: baseline;
+  }
+  .degree h3{
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+  .degree p{
+    color: var(--text-muted);
+    font-size: 14.5px;
+  }
+  .degree-date{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12.5px;
+    color: var(--accent);
+    white-space: nowrap;
+  }
+  .cert-label{
+    color: var(--text-dim);
+    font-size: 13px;
+    margin-bottom: 16px;
+    display: block;
+  }
+  .cert{
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .cert:last-child{ border-bottom: none; }
+  .cert h4{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 15.5px;
+    margin-bottom: 4px;
+  }
+  .cert .issuer{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+  .cert p.cert-desc{
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  /* ---------- ACHIEVEMENTS ---------- */
+  .achievement{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 18px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: baseline;
+  }
+  .achievement:last-child{ border-bottom: none; }
+  .achievement-year{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+    white-space: nowrap;
+  }
+  .achievement p{
+    color: var(--text-muted);
+    font-size: 14.5px;
+  }
+  .achievement p strong{
+    color: var(--text);
+    font-weight: 500;
+  }
+
   /* ---------- SERVICES ---------- */
   .services{
     display: grid;
@@ -359,6 +437,7 @@
     <span class="nav-name">Hager Farag</span>
     <div class="nav-links">
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#services">Services</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -403,6 +482,43 @@
       <br><br>
       Rather than focusing only on model accuracy, I care about understanding the problem, selecting the right approach, and building solutions that create real value for users and businesses. I'm continuously developing my expertise in AI and LLM applications while building projects that combine strong technical foundations with practical business applications.
     </p>
+  </section>
+
+  <section id="education">
+    <div class="section-head">
+      <span class="mono">education</span>
+      <h2>Education &amp; training</h2>
+    </div>
+
+    <div class="degree">
+      <div>
+        <h3>B.Sc. in Artificial Intelligence</h3>
+        <p>Faculty of Computers &amp; Artificial Intelligence, Benha University</p>
+      </div>
+      <span class="degree-date">2024 – Present</span>
+    </div>
+
+    <span class="cert-label">Certifications &amp; training</span>
+    <div class="cert">
+      <h4>LLM Training</h4>
+      <span class="issuer">TIPS Hindawi</span>
+      <p class="cert-desc">Learned Large Language Models and developed an LLM-based project.</p>
+    </div>
+    <div class="cert">
+      <h4>ITIDA AI Training</h4>
+      <span class="issuer">ITIDA</span>
+      <p class="cert-desc">Training in Machine Learning, Deep Learning, Natural Language Processing (NLP), and Computer Vision.</p>
+    </div>
+
+    <span class="cert-label" style="margin-top: 24px;">Competitive programming</span>
+    <div class="achievement">
+      <span class="achievement-year">2025</span>
+      <p><strong>ECPC</strong> — ranked 63rd for the day</p>
+    </div>
+    <div class="achievement">
+      <span class="achievement-year">2026</span>
+      <p><strong>ECPC</strong> — ranked 59th for the day, and 10th on Benha University's college ranking</p>
+    </div>
   </section>
 
   <section id="services">
